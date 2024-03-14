@@ -12,6 +12,7 @@ export type IOrder = {
   zipCode: string;
   info?: string;
   price: string;
+  payment: string;
   status: boolean;
 };
 

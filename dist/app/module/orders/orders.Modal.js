@@ -51,6 +51,9 @@ const OrdersSchema = new mongoose_1.Schema({
         type: Boolean,
         default: false,
     },
+    payment: {
+        type: String,
+    },
 }, {
     timestamps: true,
 });

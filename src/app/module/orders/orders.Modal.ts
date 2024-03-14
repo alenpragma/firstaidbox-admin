@@ -51,6 +51,9 @@ const OrdersSchema = new Schema<IOrder, OrdersModal>(
       type: Boolean,
       default: false,
     },
+    payment: {
+      type: String,
+    },
   },
   {
     timestamps: true,
