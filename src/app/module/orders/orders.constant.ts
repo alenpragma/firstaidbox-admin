@@ -6,4 +6,4 @@ export const ordersFilterableFields = [
   'email',
 ];
 
-export const ordersSearchableFields = ['Category', 'Brand', 'Price'];
+export const ordersSearchableFields = ['lastName', 'phone', 'price', 'email'];
