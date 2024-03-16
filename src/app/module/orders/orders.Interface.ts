@@ -6,14 +6,14 @@ export type IOrder = {
   phone: string;
   email: string;
   quantity: string;
-  postOffice: string;
-  policy: string;
-  distric: string;
+  roadHouse: string;
+  policeStation: string;
+  district: string;
   zipCode: string;
   info?: string;
   price: string;
   payment: string;
-  status: boolean;
+  status: string;
 };
 
 export type OrdersModal = Model<IOrder, unknown>;

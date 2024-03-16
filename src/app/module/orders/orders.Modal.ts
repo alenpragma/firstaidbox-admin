@@ -15,17 +15,17 @@ const OrdersSchema = new Schema<IOrder, OrdersModal>(
       type: String,
       required: [true, 'phone is required'],
     },
-    postOffice: {
+    roadHouse: {
       type: String,
-      required: [true, 'postOffice is required'],
+      required: [true, 'Road or house is required'],
     },
-    policy: {
+    policeStation: {
       type: String,
-      required: [true, 'policy is required'],
+      required: [true, 'Police station is required'],
     },
     email: {
       type: String,
-      required: [true, 'Email: is required'],
+      required: [true, 'Email is required'],
     },
     quantity: {
       type: String,
@@ -35,9 +35,9 @@ const OrdersSchema = new Schema<IOrder, OrdersModal>(
       type: String,
       required: [true, 'Post code is required'],
     },
-    distric: {
+    district: {
       type: String,
-      required: [true, 'distric is required'],
+      required: [true, 'district is required'],
     },
     info: {
       type: String,
@@ -48,8 +48,9 @@ const OrdersSchema = new Schema<IOrder, OrdersModal>(
       required: [true, 'price is required'],
     },
     status: {
-      type: Boolean,
-      default: false,
+      type: String,
+      enum: ['Pending', 'Processing', 'Completed', 'Rejected'],
+      default: 'Pending',
     },
     payment: {
       type: String,
